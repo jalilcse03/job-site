@@ -1,6 +1,22 @@
 <resources>
+
+    <!-- Layout name -->
     <string name="app_name">Job Site</string>
-    <string name="tx_find_right_job">Find Right Job</string>
+
+
+    <!-- button name-->
     <string name="btn_new_user">New User</string>
     <string name="btn_existing_user">Existing User</string>
+    <string name="btn_sing_in">Sing in</string>
+
+    <!-- TextField name-->
+    <string name="tx_find_right_job">Find Right Job</string>
+    <string name="tx_welcome">Welcome</string>
+    <string name="tx_sing_in_to_your_account">Sing in to your account</string>
+    <string name="tx_forgot_pass">Forgot your password?</string>
+    <string name="tx_sing_in_social_account">Sing in with socail account</string>
+
+    <!-- hind text-->
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
 </resources>
