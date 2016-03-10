@@ -44,6 +44,7 @@
             android:shadowDx="0"
             android:shadowDy="0"
             android:shadowRadius="5"
+            android:onClick="newUser"
             />
         <Button
             android:layout_marginTop="10dp"

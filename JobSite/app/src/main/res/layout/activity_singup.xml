@@ -3,15 +3,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bg_login"
-    android:orientation="vertical"
-    >
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
-        android:gravity="right"
-        >
+        android:layout_weight=".7"
+        android:gravity="right">
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -21,29 +19,28 @@
             android:id="@+id/btn_back"
             />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="3"
         android:orientation="vertical"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
         >
         <TextView
-            android:layout_marginTop="30dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/tx_welcome"
             android:gravity="center"
             android:textSize="25sp"
             android:textColor="@color/white"
-
             />
         <TextView
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/tx_sing_in_to_your_account"
+            android:text="@string/tx_create_account"
             android:gravity="center"
             android:textSize="20sp"
             android:textColor="@color/white"
@@ -52,6 +49,7 @@
             android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="textPassword"
             android:hint="@string/hint_email"
             android:textColorHint="@color/white"
             android:gravity="center"
@@ -68,52 +66,29 @@
             android:id="@+id/passwordEt"
             android:textColor="@color/white"
             />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:orientation="vertical"
-        android:layout_height="0dp"
-        android:layout_weight="1.5"
-        android:paddingLeft="20dp"
-        android:paddingRight="20dp"
-        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="@string/hint_retypePassword"
+            android:textColorHint="@color/white"
+            android:gravity="center"
+            android:id="@+id/retypePasswordEt"
+            android:textColor="@color/white"
+            />
         <Button
-            android:text="@string/btn_sing_in"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:text="@string/btn_sing_up"
             android:textColor="#FFFFFF"
             android:textSize="20sp"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/buttonshape"
             android:shadowColor="#A8A8A8"
             android:shadowDx="0"
             android:shadowDy="0"
             android:shadowRadius="5"
-            />
-        <TextView
-            android:gravity="center"
-            android:layout_marginTop="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/tx_forgot_pass"
-            android:textSize="20sp"
-            android:textColor="@color/white"
-            android:onClick="forgotPassword"
-            />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        >
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/tx_sing_in_social_account"
-            android:gravity="center_horizontal"
-            android:layout_gravity="bottom"
-            android:textSize="25sp"
-            android:textColor="@color/white"
-
             />
     </LinearLayout>
 
