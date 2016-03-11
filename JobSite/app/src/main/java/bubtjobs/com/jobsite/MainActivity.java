@@ -17,8 +17,10 @@ public class MainActivity extends AppCompatActivity {
     }
     public void existingUser(View view){
         startActivity(new Intent(MainActivity.this,LoginActivity.class));
+        overridePendingTransition(R.anim.pull_in_left, R.anim.push_out_right);
     }
     public void newUser(View view){
         startActivity(new Intent(MainActivity.this,SingupActivity.class));
+        overridePendingTransition(R.anim.pull_in_left, R.anim.push_out_right);
     }
 }

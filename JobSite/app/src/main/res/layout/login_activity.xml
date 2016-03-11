@@ -18,7 +18,7 @@
             android:src="@drawable/cancel"
             android:scaleType="center"
             android:background="@color/bg_login"
-            android:id="@+id/btn_back"
+            android:id="@+id/backBt"
             />
     </LinearLayout>
     <LinearLayout
@@ -78,6 +78,7 @@
         android:paddingRight="20dp"
         >
         <Button
+            android:id="@+id/loginBt"
             android:text="@string/btn_sing_in"
             android:textColor="#FFFFFF"
             android:textSize="20sp"
@@ -94,6 +95,7 @@
             android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/forgotPassword"
             android:text="@string/tx_forgot_pass"
             android:textSize="20sp"
             android:textColor="@color/white"
@@ -109,6 +111,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/tx_sing_in_social_account"
+            android:id="@+id/singInSocail"
             android:gravity="center_horizontal"
             android:layout_gravity="bottom"
             android:textSize="25sp"
