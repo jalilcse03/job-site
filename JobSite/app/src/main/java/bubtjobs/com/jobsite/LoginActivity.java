@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener{
     Button loginBt;
@@ -16,6 +17,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     EditText emailEt,passwordEt;
     TextView forgotPaasswordTv,singInSocailTv;
     CommonFunction commonFunction;
+    boolean error;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +27,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         initial();
     }
     public void  initial(){
+        commonFunction=new CommonFunction();
+
         loginBt=(Button)findViewById(R.id.loginBt);
         backBt=(ImageButton)findViewById(R.id.backBt);
 
@@ -42,7 +46,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     }
     public  void forgotPassword(View view){
 
-        startActivity(new Intent(LoginActivity.this,ForgotPassworActivity.class));
+        startActivity(new Intent(LoginActivity.this, ForgotPassworActivity.class));
     }
 
     @Override
@@ -54,11 +58,35 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 overridePendingTransition(R.anim.pull_in_right, R.anim.push_out_left);
                 break;
             case R.id.loginBt:
+                error=true;
+                if(!commonFunction.isValidEmail(emailEt))
+                {
+                    errorMessage(emailEt,"Please enter valid email");
+                }
+                if(!commonFunction.isEmpty(passwordEt))
+                {
+                    errorMessage(passwordEt, "Please enter your password");
+                }
+                if(!commonFunction.isEmpty(emailEt))
+                {
+                    errorMessage(emailEt, "Please enter your email");
+                }
+                if(error)
+                {
+                    Toast.makeText(LoginActivity.this, "Ok", Toast.LENGTH_LONG).show();
+
+                }
                 break;
             case R.id.forgotPassword:
                 break;
             case R.id.singInSocail:
                 break;
         }
+    }
+    private void errorMessage(EditText editText,String message)
+    {
+       editText.setError(message);
+        editText.requestFocus();
+        error=false;
     }
 }
