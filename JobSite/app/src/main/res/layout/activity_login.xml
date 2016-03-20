@@ -116,7 +116,6 @@
             android:layout_gravity="bottom"
             android:textSize="25sp"
             android:textColor="@color/white"
-
             />
     </LinearLayout>
 

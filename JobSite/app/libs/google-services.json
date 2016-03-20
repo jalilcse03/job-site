@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_id": "elated-pathway-125613",
+    "project_number": "956390675738",
+    "name": "JobsGooglePlus"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:956390675738:android:71963c8c79361190",
+        "client_id": "android:bubtjobs.com.jobsite",
+        "client_type": 1,
+        "android_client_info": {
+          "package_name": "bubtjobs.com.jobsite",
+          "certificate_hash": []
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "956390675738-kkb3mmut3gr2h3rv5u4u4rok7upglk2j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "bubtjobs.com.jobsite",
+            "certificate_hash": "F74F835976B78FBA9ACE4B8DDF6DF2481E7A7F87"
+          }
+        },
+        {
+          "client_id": "956390675738-b8fqb74jschup2u1m0t2po465hiqi5ff.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "cloud_messaging_service": {
+          "status": 1,
+          "apns_config": []
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "google_signin_service": {
+          "status": 2
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "client_info": [],
+  "ARTIFACT_VERSION": "1"
+}

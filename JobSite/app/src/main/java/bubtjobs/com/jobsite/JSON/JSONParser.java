@@ -1,4 +1,4 @@
-package bubtjobs.com.jobsite;
+package bubtjobs.com.jobsite.JSON;
 
 import android.util.Log;
 

@@ -1,17 +1,19 @@
-package bubtjobs.com.jobsite;
+package bubtjobs.com.jobsite.Activity;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class LoginActivity extends AppCompatActivity implements View.OnClickListener{
+import bubtjobs.com.jobsite.Others.CommonFunction;
+import bubtjobs.com.jobsite.R;
+
+public class Login extends AppCompatActivity implements View.OnClickListener{
     Button loginBt;
     ImageButton backBt;
     EditText emailEt,passwordEt;
@@ -23,7 +25,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
-        setContentView(R.layout.login_activity);
+        setContentView(R.layout.activity_login);
         initial();
     }
     public void  initial(){
@@ -46,7 +48,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     }
     public  void forgotPassword(View view){
 
-        startActivity(new Intent(LoginActivity.this, ForgotPassworActivity.class));
+        startActivity(new Intent(Login.this, ForgotPasswor.class));
     }
 
     @Override
@@ -54,7 +56,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         switch (v.getId())
         {
             case R.id.backBt:
-                startActivity(new Intent(LoginActivity.this,MainActivity.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
+                startActivity(new Intent(Login.this,MainActivity.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
                 overridePendingTransition(R.anim.pull_in_right, R.anim.push_out_left);
                 break;
             case R.id.loginBt:
@@ -73,16 +75,19 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 }
                 if(error)
                 {
-                    Toast.makeText(LoginActivity.this, "Ok", Toast.LENGTH_LONG).show();
+                    Toast.makeText(Login.this, "Ok", Toast.LENGTH_LONG).show();
 
                 }
                 break;
             case R.id.forgotPassword:
                 break;
             case R.id.singInSocail:
+                Intent intent=new Intent(this,SocailMediaLogin.class);
+                startActivity(intent);
                 break;
         }
     }
+
     private void errorMessage(EditText editText,String message)
     {
        editText.setError(message);

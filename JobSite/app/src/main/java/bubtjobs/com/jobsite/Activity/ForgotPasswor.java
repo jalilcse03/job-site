@@ -1,4 +1,4 @@
-package bubtjobs.com.jobsite;
+package bubtjobs.com.jobsite.Activity;
 
 import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
@@ -6,7 +6,9 @@ import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
 
-public class ForgotPassworActivity extends AppCompatActivity {
+import bubtjobs.com.jobsite.R;
+
+public class ForgotPasswor extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

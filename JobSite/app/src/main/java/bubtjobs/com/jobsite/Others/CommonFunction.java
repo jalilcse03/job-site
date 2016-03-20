@@ -1,4 +1,4 @@
-package bubtjobs.com.jobsite;
+package bubtjobs.com.jobsite.Others;
 
 import android.app.Activity;
 import android.content.Context;

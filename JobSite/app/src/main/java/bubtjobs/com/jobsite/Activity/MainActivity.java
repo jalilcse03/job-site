@@ -1,11 +1,11 @@
-package bubtjobs.com.jobsite;
+package bubtjobs.com.jobsite.Activity;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
+
+import bubtjobs.com.jobsite.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,11 +16,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
     public void existingUser(View view){
-        startActivity(new Intent(MainActivity.this,LoginActivity.class));
+        startActivity(new Intent(MainActivity.this,Login.class));
         overridePendingTransition(R.anim.pull_in_left, R.anim.push_out_right);
     }
     public void newUser(View view){
-        startActivity(new Intent(MainActivity.this,SingupActivity.class));
+        startActivity(new Intent(MainActivity.this,Singup.class));
         overridePendingTransition(R.anim.pull_in_left, R.anim.push_out_right);
     }
 }

@@ -7,16 +7,19 @@
     <!-- button name-->
     <string name="btn_new_user">New User</string>
     <string name="btn_existing_user">Existing User</string>
-    <string name="btn_sing_in">Sing in</string>
-    <string name="btn_sing_up">Sing up</string>
+    <string name="btn_sing_in">Sign in</string>
+    <string name="btn_sing_up">Sign up</string>
     <string name="btn_recovery">Recovery</string>
+
+    <string name="sign_out_googlePlus">Sign Out</string>
+    <string name="disconnect_googlePlus">Disconnect</string>
 
     <!-- TextField name-->
     <string name="tx_find_right_job">Find Right Job</string>
     <string name="tx_welcome">Welcome</string>
-    <string name="tx_sing_in_to_your_account">Sing in to your account</string>
+    <string name="tx_sing_in_to_your_account">Sign in to your account</string>
     <string name="tx_forgot_pass">Forgot your password?</string>
-    <string name="tx_sing_in_social_account">Sing in with socail account</string>
+    <string name="tx_sing_in_social_account">Sign in with socail account</string>
     <string name="tx_create_account">Crate an account</string>
     <string name="tx_forgot">Forgot</string>
     <string name="tx_your_password">Your Password?</string>
